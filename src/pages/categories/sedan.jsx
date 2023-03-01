@@ -1,13 +1,11 @@
 import React from "react";
 import carsData from "data/carsdata";
 
+import CarList from "@/components/templates/carList";
+
 const Sedan = () => {
   const sedanCars = carsData.filter((car) => car.category === "Sedan");
-  console.log(sedanCars);
-  return (
-    <>
-      <div>Sedan</div>
-    </>
-  );
+
+  return <CarList data={sedanCars} />;
 };
 export default Sedan;
