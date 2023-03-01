@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
           <p>Choose a car to Buy</p>
         </Link>
       </header>
-      <div>{children}</div>
+      <div style={{ margin: "40px 0" }}>{children}</div>
       <footer className={styles.footer}>Next.Js | Car shop</footer>
     </>
   );
